@@ -17,6 +17,8 @@ int main()
 		std::cout << "An error occured: " << exception.what() << std::endl;
 		std::cout << "Press any key to exit.";
 		std::cin.get();
+
+		return 1;
 	}
 
 	std::cout << "Everything seems ok. Pressing a key on your MIDI keyboard will generate key event for Guild Wars 2.\n Press q to quit.\n";
@@ -25,5 +27,7 @@ int main()
 	{
 		key = _getch();
 	}
+
+	return 0;
 }
 
