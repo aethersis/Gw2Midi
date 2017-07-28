@@ -38,5 +38,8 @@
     <ClCompile Include="Gw2Midi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MidiKeyboard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

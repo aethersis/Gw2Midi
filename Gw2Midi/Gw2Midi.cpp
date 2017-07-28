@@ -19,7 +19,7 @@ int main()
 		std::cin.get();
 	}
 
-	std::cout << "Everything seems ok. Pressing a key on your MIDI keyboard will generate key event for Guild Wars 2.\n\n";
+	std::cout << "Everything seems ok. Pressing a key on your MIDI keyboard will generate key event for Guild Wars 2.\n Press q to quit.\n";
 
 	while (!_kbhit() && key != 'q')
 	{
