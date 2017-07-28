@@ -21,9 +21,9 @@ int main()
 
 	std::cout << "Everything seems ok. Pressing a key on your MIDI keyboard will generate key event for Guild Wars 2.\n\n";
 
-	while (!kbhit() && key != 'q')
+	while (!_kbhit() && key != 'q')
 	{
-		key = getch();
+		key = _getch();
 	}
 }
 

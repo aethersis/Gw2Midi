@@ -37,7 +37,7 @@ private:
 			std::cout << "Received noteId: " << note << "\n";
 		}
 
-		return note;
+		return (uint8_t)note;
 	}
 
 	int8_t noteToOctave(uint8_t noteId)
