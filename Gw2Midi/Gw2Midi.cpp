@@ -7,6 +7,7 @@
 
 int main()
 {
+
 	char key = ' ';
 	try
 	{

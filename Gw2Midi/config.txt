@@ -1,0 +1,12 @@
+#Please do not modify the order of rows in this file.Only the second column is modifiable.
+#The first column represents note name or function and the second column represents bound key.
+#I.e. If you want to bind key ; to note D, change the line D, 2 to D, ;
+C, 1
+D, 2
+E, 3
+F, 4
+G, 5
+A, 6
+H, 7
+OctaveDown, 9
+OctaveUp, 0

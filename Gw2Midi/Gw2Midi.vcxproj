@@ -142,12 +142,15 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConfigParser.h" />
+    <ClInclude Include="KeyConfig.h" />
     <ClInclude Include="MidiKeyboard.h" />
     <ClInclude Include="MidiReceiver.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConfigParser.cpp" />
     <ClCompile Include="Gw2Midi.cpp" />
     <ClCompile Include="MidiKeyboard.cpp" />
     <ClCompile Include="stdafx.cpp">
