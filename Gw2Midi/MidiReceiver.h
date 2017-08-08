@@ -6,6 +6,9 @@
 
 MidiKeyboard keyboard;
 
+// I am aware that this file is messed up because it mixes functionality, however the WinAPI callback ruins everything. 
+// I haven't found a way to call non-static class method using WinAPI callbacks so far...
+
 void CALLBACK processMidiEvent(HMIDIIN hMidiIn, UINT wMsg, DWORD dwInstance, DWORD dwParam1, DWORD dwParam2)
 {
 	if (wMsg == MIM_DATA)
@@ -22,11 +25,11 @@ void CALLBACK processMidiEvent(HMIDIIN hMidiIn, UINT wMsg, DWORD dwInstance, DWO
 	return;
 }
 
-void initMidi()
+void initMidi(const std::string& configPath = "config.txt")
 {
 	try
 	{
-		ConfigParser parser("config.txt");
+		ConfigParser parser(configPath);
 		auto config = parser.getParsedConfig();
 		keyboard.loadConfig(config);
 	}
